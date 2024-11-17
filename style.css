@@ -1,0 +1,106 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+  color: #fff;
+}
+
+.login-container {
+  background-color: rgba(25, 25, 25, 0.8);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 90%;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #00ffaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #555;
+  outline: none;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #00ffaa;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+  border-bottom-color: #00ffaa;
+}
+
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ffaa;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #00cc88;
+  box-shadow: 0 5px 15px rgba(0, 255, 170, 0.4);
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px;
+  }
+}
